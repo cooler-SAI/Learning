@@ -1,0 +1,15 @@
+D:\Learning C#\Strategy_Pattern\bin\Debug\net7.0\Strategy_Pattern.exe
+D:\Learning C#\Strategy_Pattern\bin\Debug\net7.0\Strategy_Pattern.deps.json
+D:\Learning C#\Strategy_Pattern\bin\Debug\net7.0\Strategy_Pattern.runtimeconfig.json
+D:\Learning C#\Strategy_Pattern\bin\Debug\net7.0\Strategy_Pattern.dll
+D:\Learning C#\Strategy_Pattern\bin\Debug\net7.0\Strategy_Pattern.pdb
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.csproj.AssemblyReference.cache
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.AssemblyInfoInputs.cache
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.AssemblyInfo.cs
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.csproj.CoreCompileInputs.cache
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.dll
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\refint\Strategy_Pattern.dll
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.pdb
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\Strategy_Pattern.genruntimeconfig.cache
+D:\Learning C#\Strategy_Pattern\obj\Debug\net7.0\ref\Strategy_Pattern.dll
