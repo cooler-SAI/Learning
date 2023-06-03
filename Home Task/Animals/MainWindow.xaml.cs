@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Xml;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -102,4 +105,61 @@ namespace AnimalApp
             }
         }
     }
+
+    public abstract class AnimalSerializer
+    {
+        public abstract void Serialize(List<Animal> animals, string filename);
+    }
+
+    public class JsonSerializer : AnimalSerializer
+    {
+        public override void Serialize(List<Animal> animals, string filename)
+        {
+            string json = System.Text.Json.JsonSerializer.Serialize(animals);
+            File.WriteAllText(filename, json);
+        }
+    }
+
+    public class XmlSerializer : AnimalSerializer
+    {
+        public override void Serialize(List<Animal> animals, string filename)
+        {
+            using (XmlWriter writer = XmlWriter.Create(filename))
+            {
+                writer.WriteStartDocument();
+                writer.WriteStartElement("Animals");
+
+                foreach (Animal animal in animals)
+                {
+                    writer.WriteStartElement("Animal");
+
+                    writer.WriteElementString("Name", animal.Name);
+                    writer.WriteElementString("Species", animal.Species);
+
+                    writer.WriteEndElement();
+                }
+
+                writer.WriteEndElement();
+                writer.WriteEndDocument();
+            }
+        }
+    }
+
+    public class CsvSerializer : AnimalSerializer
+    {
+        public override void Serialize(List<Animal> animals, string filename)
+        {
+            using (StreamWriter writer = new StreamWriter(filename))
+            {
+                writer.WriteLine("Name,Species");
+
+                foreach (Animal animal in animals)
+                {
+                    writer.WriteLine($"{animal.Name},{animal.Species}");
+                }
+            }
+        }
+    }
+
+
 }
